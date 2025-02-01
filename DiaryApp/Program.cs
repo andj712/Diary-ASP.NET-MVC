@@ -22,7 +22,8 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    //po defaultu se home prikaze kad ukucas localhost:7023 
+    pattern: "{controller=Home}/{action=MyPage}/{id?}")
     .WithStaticAssets();
 
 
