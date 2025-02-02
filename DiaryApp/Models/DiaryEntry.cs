@@ -12,6 +12,6 @@ namespace DiaryApp.Models
         [Required]
         public String Content { get; set; } = string.Empty;
         [Required]
-        public DateTime Created { get; set; } = DateTime.Now;
+        public DateTime Created { get; set; }
     }
 }
