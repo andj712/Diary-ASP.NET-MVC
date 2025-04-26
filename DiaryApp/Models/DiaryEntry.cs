@@ -6,7 +6,8 @@ namespace DiaryApp.Models
     {
         //[Key]
         public int  Id { get; set; }
-        [Required] //title is required
+        [Required(ErrorMessage ="Please enter the title")] //title is required
+        [StringLength(100,MinimumLength =3,ErrorMessage ="Title must be between 3 and 100 characters!")]
         public String Title { get; set; } = string.Empty;
 
         [Required]
