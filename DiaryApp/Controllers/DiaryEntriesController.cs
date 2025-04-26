@@ -39,5 +39,10 @@ namespace DiaryApp.Controllers
 
             return View(obj);
         }
+
+        public IActionResult Edit(int id)
+        {
+            return View();
+        }
     }
 }
